@@ -1,0 +1,15 @@
+{
+  "pages":[ 
+    "pages/user/user",
+    "pages/explore/explore",
+    "pages/login/login",
+    "pages/main/main"
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+      "cu-custom":"/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

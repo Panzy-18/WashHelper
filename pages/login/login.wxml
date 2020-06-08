@@ -1,0 +1,16 @@
+<view class="wrap">
+    <view class="logo_wrap">
+        <!-- logo位置 -->
+        <view class="logo">
+            <image mode="widthFix" src="../../image/logo.png"/>
+        </view>
+        <!-- title位置 -->
+        <view class="title">洗  乎</view>
+    </view>
+    <view class="btn_wrap">
+        <button class="btn" open-type="getUserInfo"
+        bindgetuserinfo="handleUserInfo">
+            <text class="btn_text">微信授权登录</text>
+        </button>
+    </view>
+</view>

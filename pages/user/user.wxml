@@ -1,0 +1,60 @@
+<view class="bar_wrap">
+    <cu-custom>
+        <view slot="content">个人中心</view>
+    </cu-custom>
+</view>
+<!--  -->
+<view class="title_wrap">
+    <view class="img_wrap">
+        <image src="../../image/logo.png"></image>
+    </view>
+    <text>未登录</text>
+    <view class="icon_wrap">
+        <view class="iconfont"></view>
+    </view>
+</view>
+<!--  -->
+<view class="list_wrap">
+    <navigator class="list_item">
+        <view class="left_wrap">
+            <view class="iconfont iconlishi iconstyle1"></view>
+            <view class="list_item_text">我的历史</view>
+        </view>
+        <view class="iconfont iconyou iconstyle2"></view>
+    </navigator>
+    <navigator class="list_item">
+        <view class="left_wrap">
+            <view class="iconfont icon-shoucang iconstyle1"></view>
+            <view class="list_item_text">我的收藏</view>
+        </view>
+        <view class="iconfont iconyou iconstyle2"></view>
+    </navigator>
+    <navigator class="list_item">
+        <view class="left_wrap">
+            <view class="iconfont icon-tiwen iconstyle1"></view>
+            <view class="list_item_text">我的提问</view>
+        </view>
+        <view class="iconfont iconyou iconstyle2"></view>
+    </navigator>
+    <navigator class="list_item">
+        <view class="left_wrap">
+            <view class="iconfont iconbox iconstyle1"></view>
+            <view class="list_item_text">物流信息</view>
+        </view>
+        <view class="iconfont iconyou iconstyle2"></view>
+    </navigator>
+    <navigator class="list_item">
+        <view class="left_wrap">
+            <view class="iconfont icondizhi iconstyle1"></view>
+            <view class="list_item_text">我的地址</view>
+        </view>
+        <view class="iconfont iconyou iconstyle2"></view>
+    </navigator>
+    <navigator class="list_item">
+        <view class="left_wrap">
+            <view class="iconfont iconjuanzeng iconstyle1"></view>
+            <view class="list_item_text">善衣传递</view>
+        </view>
+        <view class="iconfont iconyou iconstyle2"></view>
+    </navigator>
+</view>

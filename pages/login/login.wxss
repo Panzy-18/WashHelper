@@ -1,0 +1,60 @@
+page {
+  background: linear-gradient(135deg, #6f8fea 0%, #474ad9 100%);
+}
+.wrap {
+  margin-top: 500rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrap .logo_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .logo_wrap .logo {
+  border-radius: 88rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 176rpx;
+  height: 176rpx;
+  background: #ffffff;
+  box-shadow: 4px 16px 52px 0px rgba(111, 143, 234, 0.16), 2px 6px 20px 0px rgba(111, 143, 234, 0.08);
+}
+.wrap .logo_wrap .logo image {
+  width: 86rpx;
+}
+.wrap .logo_wrap .title {
+  width: 57px;
+  height: 36px;
+  font-size: 24px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 36px;
+}
+.wrap .btn_wrap {
+  margin-top: 100rpx;
+}
+.wrap .btn_wrap .btn {
+  width: 590rpx;
+  height: 96rpx;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 48rpx;
+  border: 2rpx solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .btn_wrap .btn text {
+  width: 247px;
+  height: 24px;
+  font-size: 17px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 24px;
+}

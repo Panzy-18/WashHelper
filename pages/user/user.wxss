@@ -1,0 +1,69 @@
+.bar_wrap {
+  float: left;
+}
+.bar_wrap cu-custom view {
+  color: #fff;
+}
+.title_wrap {
+  padding-top: 75rpx;
+  width: 100%;
+  height: 364rpx;
+  background: linear-gradient(135deg, #6f8fea 0%, #474ad9 100%);
+  border-radius: 0px 0px 0px 128rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+}
+.title_wrap .img_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 176rpx;
+  width: 176rpx;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.title_wrap .img_wrap image {
+  height: 110rpx;
+  width: 86rpx;
+  overflow: hidden;
+}
+.list_wrap {
+  margin-top: 50rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 12px 0px rgba(111, 143, 234, 0.16), 0px 2px 2px 0px rgba(111, 143, 234, 0.08);
+}
+.list_wrap .list_item {
+  padding: 30rpx;
+  border-top: 10rpx;
+  border-bottom: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(111, 143, 234, 0.16);
+}
+.list_wrap .list_item .left_wrap {
+  margin-left: 10rpx;
+}
+.list_wrap .list_item .left_wrap .iconstyle1 {
+  display: inline-block;
+  font-size: 20px;
+  color: lightskyblue;
+}
+.list_wrap .list_item .left_wrap .list_item_text {
+  margin-left: 10rpx;
+  display: inline-block;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #2f2f51;
+  line-height: 20px;
+}
+.list_wrap .list_item .iconstyle2 {
+  display: inline-block;
+  font-size: 14px;
+  color: grey;
+}

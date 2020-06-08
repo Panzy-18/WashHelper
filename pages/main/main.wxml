@@ -1,0 +1,37 @@
+<view class="substrate">
+    <view class="title_wrap">
+        <text class="title_text">洗乎</text>
+    </view>
+    <view class="search_wrap">
+        <view class="search_input">
+            <van-search value="{{ value }}" shape="round" background="rgba(0,0,0,0)" placeholder="请输入搜索关键词" />
+        </view>
+            <view class="iconfont icon-tiwen-1"></view>
+    </view>
+</view>
+<!--  -->
+<view class="address_wrap">
+    <text class="address_text">江苏省 扬州市</text>
+    <!-- url undefine -->
+    <navigator class="address_change" url="../login/login" open-type="navigate">更改→</navigator>
+</view>
+<!--  -->
+<view class="weather_wrap">
+    <view class="weather_index">
+        <view class="weather_index_text">洗衣指数</view>
+        <view class="weather_index_value">40</view>
+    </view>
+    <view class="weather_state">
+        <image />
+        <view class="weather_state_description">多云转小雨</view>
+        <text class="weather_state_t">26°C</text>
+    </view>
+</view>
+<!--  -->
+<view class="tabs_wrap" animated>
+    <van-tabs active="{{ active }}" bind:change="onChange" color="#6F8FEA">
+        <van-tab title="常见问题">内容 1</van-tab>
+        <van-tab title="特殊面料">内容 2</van-tab>
+        <van-tab title="" disabled></van-tab>
+    </van-tabs>
+</view>
