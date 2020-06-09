@@ -43,13 +43,14 @@
         </view>
         <view class="iconfont iconyou iconstyle2"></view>
     </navigator>
-    <navigator class="list_item">
+    <view class="list_item">
+        <button class="choose_btn" bindtap="handleChooseAddress">选择地址</button>
         <view class="left_wrap">
             <view class="iconfont icondizhi iconstyle1"></view>
             <view class="list_item_text">我的地址</view>
         </view>
         <view class="iconfont iconyou iconstyle2"></view>
-    </navigator>
+    </view>
     <navigator class="list_item">
         <view class="left_wrap">
             <view class="iconfont iconjuanzeng iconstyle1"></view>

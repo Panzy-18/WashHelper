@@ -1,12 +1,15 @@
+<view class="bar_wrap">
+    <cu-custom>
+        <view slot="content">个人中心</view>
+    </cu-custom>
+</view>
+<!--  -->
 <view class="substrate">
-    <view class="title_wrap">
-        <text class="title_text">洗乎</text>
-    </view>
     <view class="search_wrap">
         <view class="search_input">
             <van-search value="{{ value }}" shape="round" background="rgba(0,0,0,0)" placeholder="请输入搜索关键词" />
         </view>
-            <view class="iconfont icon-tiwen-1"></view>
+        <view class="iconfont icon-tiwen-1"></view>
     </view>
 </view>
 <!--  -->
@@ -30,7 +33,25 @@
 <!--  -->
 <view class="tabs_wrap" animated>
     <van-tabs active="{{ active }}" bind:change="onChange" color="#6F8FEA">
-        <van-tab title="常见问题">内容 1</van-tab>
+        <van-tab title="常见问题">
+            <view class="ques_wrap">
+                <!-- 这里的square属性被修改成了圆形 -->
+                <van-grid square column-num="4" gutter="{{30}}">
+                    <van-grid-item icon="../../image/logo.png" text="文字" />
+                    <van-grid-item icon="../../image/logo.png" text="文字" />
+                    <van-grid-item icon="../../image/logo.png" text="文字" />
+                    <van-grid-item icon="../../image/logo.png" text="文字" />
+                    <van-grid-item icon="../../image/logo.png" text="文字" />
+                    <van-grid-item icon="../../image/logo.png" text="文字" />
+                    <van-grid-item icon="../../image/logo.png" text="文字" />
+                    <van-grid-item icon="../../image/logo.png" text="文字" />
+                    <van-grid-item icon="../../image/logo.png" text="文字" />
+                    <van-grid-item icon="../../image/logo.png" text="文字" />
+                    <van-grid-item icon="../../image/logo.png" text="文字" />
+                    <van-grid-item icon="../../image/logo.png" text="文字" />
+                </van-grid>
+            </view>
+        </van-tab>
         <van-tab title="特殊面料">内容 2</van-tab>
         <van-tab title="" disabled></van-tab>
     </van-tabs>

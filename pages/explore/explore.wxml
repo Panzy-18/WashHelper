@@ -1,7 +1,10 @@
+<view class="bar_wrap">
+    <cu-custom>
+        <view slot="content">洗乎</view>
+    </cu-custom>
+</view>
+<!--  -->
 <view class="substrate">
-    <view class="title_wrap">
-        <text class="title_text">洗乎</text>
-    </view>
     <view class="search_wrap">
         <view class="search_input">
             <van-search value="{{ value }}" shape="round" background="rgba(0,0,0,0)" placeholder="请输入搜索关键词" />
@@ -10,14 +13,21 @@
     </view>
 </view>
 <!--  -->
-<view class="swiper_wrap">
-    <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
-        <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
-            <view class="swiper-item">
-                <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
-                <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
-            </view>
-        </swiper-item>
-    </swiper>
-</view>
-<!--  -->
+<scroll-view class="ex_wrap" scroll-y style="height: {{scrollh}}px">
+    <view class="swiper_wrap">
+        <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+            <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+                <view class="swiper-item">
+                    <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+                    <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!--  -->
+    <view class="article_list">
+        <view class="article_wrap"></view>
+        <view class="article_wrap"></view>
+        <view class="article_wrap"></view>
+    </view>
+</scroll-view>

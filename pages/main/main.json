@@ -2,6 +2,8 @@
   "usingComponents": {
     "van-search": "../../dist/search/index",
     "van-tab": "../../dist/tab/index",
-    "van-tabs": "../../dist/tabs/index"
+    "van-tabs": "../../dist/tabs/index",
+    "van-grid": "../../dist/grid/index",
+    "van-grid-item": "../../dist/grid-item/index"
   }
 }

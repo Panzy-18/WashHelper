@@ -2,7 +2,7 @@
 
 .van-tabs {
     position: relative;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
 }
 
 .van-tabs__wrap {

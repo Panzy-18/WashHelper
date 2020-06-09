@@ -1,5 +1,5 @@
 .bar_wrap {
-  float: left;
+  position: absolute;
 }
 .bar_wrap cu-custom view {
   color: #fff;
@@ -39,11 +39,17 @@
 }
 .list_wrap .list_item {
   padding: 30rpx;
-  border-top: 10rpx;
-  border-bottom: 10rpx;
+  border-top: 25rpx;
+  border-bottom: 25rpx;
   display: flex;
   justify-content: space-between;
-  border: 1px solid rgba(111, 143, 234, 0.16);
+  align-items: center;
+  border: 1rpx solid rgba(111, 143, 234, 0.16);
+}
+.list_wrap .list_item .choose_btn {
+  position: absolute;
+  opacity: 0.2;
+  width: 100%;
 }
 .list_wrap .list_item .left_wrap {
   margin-left: 10rpx;
