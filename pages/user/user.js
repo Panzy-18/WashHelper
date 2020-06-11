@@ -17,6 +17,10 @@ Page({
     } catch (error) {
       console.log(error);
     }
-  }
+  },
+
+  onShow() {
+		this.getTabBar().init();
+	},
 
 })

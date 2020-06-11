@@ -4,7 +4,9 @@ App({
   onLaunch: function(options){
     wx.getSystemInfo({
       success: e => {
+        console.log(e);
         this.globalData.scrollh = e.safeArea.height-182;
+        this.globalData.x_btm_height = e.statusBarHeight;
         this.globalData.StatusBar = e.statusBarHeight;
         let custom = wx.getMenuButtonBoundingClientRect();
         this.globalData.Custom = custom;  
@@ -26,6 +28,7 @@ App({
 
   },
   globalData: {
-    scrollh:0
+    scrollh:0,
+    x_btm_height:0
   }
 });

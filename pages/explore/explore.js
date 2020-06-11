@@ -40,6 +40,10 @@ Page({
     })
   },
 
+  onShow() {
+		this.getTabBar().init();
+	},
+
   onLoad: function(options) {
     var that = this;
     wx.getSystemInfo({

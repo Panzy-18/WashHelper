@@ -30,4 +30,5 @@
         <view class="article_wrap"></view>
         <view class="article_wrap"></view>
     </view>
+    <view class="kongbai">1</view>
 </scroll-view>

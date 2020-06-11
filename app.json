@@ -1,5 +1,26 @@
 {
-  "pages":[ 
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "快速"
+      },
+      {
+        "pagePath": "pages/explore/explore",
+        "text": "探索"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "pages": [
+    "pages/article/article",
     "pages/user/user",
     "pages/explore/explore",
     "pages/login/login",
@@ -9,7 +30,7 @@
     "navigationStyle": "custom"
   },
   "usingComponents": {
-      "cu-custom":"/colorui/components/cu-custom"
+    "cu-custom": "/colorui/components/cu-custom"
   },
   "sitemapLocation": "sitemap.json"
 }

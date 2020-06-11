@@ -8,5 +8,8 @@ Page({
   onChange(e){
     console.log(e);
     
-  }
+  },
+  onShow() {
+		this.getTabBar().init();
+	},
 })

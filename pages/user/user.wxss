@@ -49,7 +49,7 @@
 .list_wrap .list_item .choose_btn {
   position: absolute;
   opacity: 0.2;
-  width: 100%;
+  width: 90%;
 }
 .list_wrap .list_item .left_wrap {
   margin-left: 10rpx;

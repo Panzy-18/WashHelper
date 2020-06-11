@@ -36,19 +36,8 @@
         <van-tab title="常见问题">
             <view class="ques_wrap">
                 <!-- 这里的square属性被修改成了圆形 -->
-                <van-grid square column-num="4" gutter="{{30}}">
-                    <van-grid-item icon="../../image/logo.png" text="文字" />
-                    <van-grid-item icon="../../image/logo.png" text="文字" />
-                    <van-grid-item icon="../../image/logo.png" text="文字" />
-                    <van-grid-item icon="../../image/logo.png" text="文字" />
-                    <van-grid-item icon="../../image/logo.png" text="文字" />
-                    <van-grid-item icon="../../image/logo.png" text="文字" />
-                    <van-grid-item icon="../../image/logo.png" text="文字" />
-                    <van-grid-item icon="../../image/logo.png" text="文字" />
-                    <van-grid-item icon="../../image/logo.png" text="文字" />
-                    <van-grid-item icon="../../image/logo.png" text="文字" />
-                    <van-grid-item icon="../../image/logo.png" text="文字" />
-                    <van-grid-item icon="../../image/logo.png" text="文字" />
+                <van-grid square column-num="4" gutter="{{30}}" border="{{false}}">
+                    <van-grid-item icon="../../image/logo.png" text="文字"/>
                 </van-grid>
             </view>
         </van-tab>
