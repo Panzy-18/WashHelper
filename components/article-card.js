@@ -4,14 +4,13 @@ Component({
      * 组件的属性列表
      */
     properties: {
-  
     },
   
     /**
      * 组件的初始数据
      */
     data: {
-  
+      title_text:"怎么洗衣服最好？"
     },
   
     /**

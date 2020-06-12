@@ -2,7 +2,7 @@
     <view class="up_part">
         <image src="../image/bg.png" mode="center" />
         <view class="article_wrap">
-            <view class="article_title">怎么洗衣服最好？</view>
+            <view class="article_title">{{title_text}}</view>
             <view class="article_text">
                 overflow: hidden;display: -webkit-box;text-overflow: ellipsis;-webkit-line-clamp: 2;  /*要显示的行数*/-webkit-box-orient: vertical;
             </view>

@@ -20,6 +20,7 @@
     ]
   },
   "pages": [
+    "pages/alist/alist",
     "pages/myq/myq",
     "pages/addq/addq",
     "pages/my/my",

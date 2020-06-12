@@ -1,0 +1,20 @@
+<cu-custom bgColor="my_bg" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">问题</view>
+</cu-custom>
+<!--  -->
+<van-panel title="羽绒服怎么洗？" desc="" status="" use-footer-slot>
+  <view class="ques_des">
+    <view class="ques_des_text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+    <van-uploader file-list="{{ fileList }}" max-count="{{fileNum}}" deletable="{{false}}"	/>
+  </view>
+  <view slot="footer">
+    <van-button size="small" type="info" round>添加回答</van-button>
+  </view>
+</van-panel>
+<!--  -->
+<view class="fvqwvnoqv">
+<view class="card_wrap">
+  <ans-card></ans-card>
+</view>
+</view>

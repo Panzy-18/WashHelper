@@ -51,11 +51,4 @@
         </view>
         <view class="iconfont iconyou iconstyle2"></view>
     </view>
-    <navigator class="list_item" hidden>
-        <view class="left_wrap">
-            <view class="iconfont iconjuanzeng iconstyle1"></view>
-            <view class="list_item_text">善衣传递</view>
-        </view>
-        <view class="iconfont iconyou iconstyle2"></view>
-    </navigator>
 </view>
