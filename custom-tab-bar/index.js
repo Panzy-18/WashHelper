@@ -1,3 +1,4 @@
+const app = getApp();
 Component({
 	data: {
 		active: 0,
@@ -17,7 +18,8 @@ Component({
 				text: '个人中心',
 				url: '/pages/user/user'
 			},
-		]
+		],
+		StatusBar: app.globalData.StatusBar
 	},
 
 	methods: {

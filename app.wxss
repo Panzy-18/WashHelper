@@ -2,7 +2,6 @@
 @import "colorui/main.wxss";
 @import "colorui/icon.wxss";
 @import "style/iconfont.wxss";
-@import "style/iconfont2.wxss";
 
 .container {
   height: 100%;

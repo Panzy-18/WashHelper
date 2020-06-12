@@ -75,7 +75,7 @@ page {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 150rpx;
+        width: 200rpx;
         .weather_index_text {
             font-size: 14px;
             font-family: PingFangSC-Regular, PingFang SC;
@@ -85,11 +85,24 @@ page {
         }
 
         .weather_index_value {
-            font-size: 34px;
+            display: flex;
+            flex-direction: row;
+            font-size: 25px;
             font-family: PingFangSC-Regular, PingFang SC;
             font-weight: 400;
             color: rgba(71, 74, 217, 1);
             line-height: 42px;
+            .icon1{
+                margin-left: 9px;
+                font-size: 8px;
+                color:#999;
+            }
+            .btn{
+                position: absolute;
+                width:180rpx;
+                height: 42px;
+                opacity: 0.3;
+            }
         }
     }
 

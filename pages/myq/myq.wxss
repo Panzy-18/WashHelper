@@ -1,0 +1,6 @@
+/* pages/myq/myq.wxss */
+.tag_wrap {
+  display: flex;
+  font-display: row;
+  flex-wrap: nowrap;
+}

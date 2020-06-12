@@ -1,0 +1,18 @@
+<cu-custom bgColor="my_bg" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">我的提问</view>
+</cu-custom>
+<!--  -->
+<van-cell-group title="待解答">
+    <van-cell title="怎么洗xxxx" is-link />
+</van-cell-group>
+<van-cell-group title="已解答">
+    <van-cell is-link >
+        <view slot="title">
+            <view class="tag_wrap">
+            <van-tag type="danger">new</van-tag>
+            <view class="van-cell-text">怎么洗xxxx</view>
+            </view>
+        </view>
+    </van-cell>
+</van-cell-group>

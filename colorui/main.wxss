@@ -3939,3 +3939,8 @@ scroll-view.cu-steps .cu-item {
 .lines-white {
 	color: var(--white);
 }
+
+.my_bg{
+	background: linear-gradient(135deg, rgba(111, 143, 234, 1) 0%, rgba(71, 74, 217, 1) 100%);
+	color:#fff;
+}

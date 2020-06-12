@@ -18,7 +18,7 @@
     <navigator class="list_item">
         <view class="left_wrap">
             <view class="iconfont iconlishi iconstyle1"></view>
-            <view class="list_item_text">我的历史</view>
+            <view class="list_item_text">我的足迹</view>
         </view>
         <view class="iconfont iconyou iconstyle2"></view>
     </navigator>
@@ -36,7 +36,7 @@
         </view>
         <view class="iconfont iconyou iconstyle2"></view>
     </navigator>
-    <navigator class="list_item">
+    <navigator class="list_item" hidden >
         <view class="left_wrap">
             <view class="iconfont iconbox iconstyle1"></view>
             <view class="list_item_text">物流信息</view>
@@ -51,7 +51,7 @@
         </view>
         <view class="iconfont iconyou iconstyle2"></view>
     </view>
-    <navigator class="list_item">
+    <navigator class="list_item" hidden>
         <view class="left_wrap">
             <view class="iconfont iconjuanzeng iconstyle1"></view>
             <view class="list_item_text">善衣传递</view>

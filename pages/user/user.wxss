@@ -44,7 +44,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1rpx solid rgba(111, 143, 234, 0.16);
+  border: 0.4rpx solid rgba(179, 198, 252, 0.16);
 }
 .list_wrap .list_item .choose_btn {
   position: absolute;

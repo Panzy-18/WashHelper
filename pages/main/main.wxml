@@ -22,7 +22,11 @@
 <view class="weather_wrap">
     <view class="weather_index">
         <view class="weather_index_text">洗衣指数</view>
-        <view class="weather_index_value">40</view>
+        <view class="weather_index_value">
+            <button class="btn" bindtap="showPopup">弹出</button>
+            不推荐
+            <view class="iconfont icontishi icon1"></view>
+        </view>
     </view>
     <view class="weather_state">
         <image />
@@ -45,3 +49,5 @@
         <van-tab title="" disabled></van-tab>
     </van-tabs>
 </view>
+
+<van-popup show="{{ show }}" bind:close="onClose">内容</van-popup>

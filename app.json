@@ -20,6 +20,9 @@
     ]
   },
   "pages": [
+    "pages/myq/myq",
+    "pages/addq/addq",
+    "pages/my/my",
     "pages/article/article",
     "pages/user/user",
     "pages/explore/explore",
@@ -30,7 +33,9 @@
     "navigationStyle": "custom"
   },
   "usingComponents": {
-    "cu-custom": "/colorui/components/cu-custom"
+    "cu-custom": "/colorui/components/cu-custom",
+    "article-card":"/components/article-card",
+    "comment":"/components/comment"
   },
   "sitemapLocation": "sitemap.json"
 }

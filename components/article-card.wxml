@@ -1,0 +1,20 @@
+<view class="article_card">
+    <view class="up_part">
+        <image src="../image/bg.png" mode="center" />
+        <view class="article_wrap">
+            <view class="article_title">怎么洗衣服最好？</view>
+            <view class="article_text">
+                overflow: hidden;display: -webkit-box;text-overflow: ellipsis;-webkit-line-clamp: 2;  /*要显示的行数*/-webkit-box-orient: vertical;
+            </view>
+        </view>
+    </view>
+    <view class="dn_part">
+        <view class="auth">
+            <image src="../image/logo.png" mode="aspectFit"/>
+            <view class="auth_name">官方回答</view>
+        </view>
+        <view class="like">
+            <view class="like_num">89人认为有用</view>
+        </view>
+    </view>
+</view>

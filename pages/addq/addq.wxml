@@ -1,0 +1,16 @@
+<cu-custom bgColor="my_bg" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">添加问题</view>
+</cu-custom>
+<!--  -->
+<van-cell-group>
+    <van-field value="{{ value }}" placeholder="请输入问题" bind:change="onChange" />
+    <van-field value="{{ message }}" type="textarea" placeholder="请输入问题描述，详细的描述更有利于问题回答。" autosize />
+    <view class="uploader_wrap">
+        <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+    </view>
+</van-cell-group>
+<!--  -->
+<view class="btn_wrap">
+    <van-button type="info">完成</van-button>
+</view>

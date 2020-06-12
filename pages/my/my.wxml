@@ -1,0 +1,6 @@
+<cu-custom bgColor="my_bg" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">我的收藏</view>
+</cu-custom>
+
+<view class="wrap"><article-card /></view>

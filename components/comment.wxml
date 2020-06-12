@@ -1,0 +1,9 @@
+<view class="comment_wrap">
+    <van-image round height="30" width="30" fit="cover" src="https://img.yzcdn.cn/vant/cat.jpeg"/>
+    <view class="right_wrap">
+        <view class="user_name">用户甲</view>
+        <view class="cm_text">
+            111111111111111111111111111111111111111111111111111111111111111111111
+        </view>
+    </view>
+</view>

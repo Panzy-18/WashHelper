@@ -26,9 +26,7 @@
     </view>
     <!--  -->
     <view class="article_list">
-        <view class="article_wrap"></view>
-        <view class="article_wrap"></view>
-        <view class="article_wrap"></view>
+        <article-card />
     </view>
     <view class="kongbai">1</view>
 </scroll-view>
