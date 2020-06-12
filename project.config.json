@@ -62,8 +62,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/user/user",
-					"pathName": "pages/user/user",
+					"name": "pages/main/main",
+					"pathName": "pages/main/main",
 					"query": "",
 					"scene": null
 				}

@@ -43,11 +43,19 @@ page {
   line-height: 24px;
 }
 .address_wrap .address_change {
+  border: none;
   font-size: 14px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
   color: #6f8fea;
   line-height: 20px;
+}
+.address_wrap button {
+  position: absolute;
+  height: 16px;
+  width: 30px;
+  right: 15px;
+  opacity: 0.2;
 }
 .weather_wrap {
   display: flex;
@@ -95,6 +103,13 @@ page {
   height: 42px;
   opacity: 0.3;
 }
+.weather_wrap .weather_index .weather_index_info {
+  font-size: 11px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #9797a8;
+  line-height: 20px;
+}
 .weather_wrap .weather_state {
   display: flex;
   flex-direction: column;
@@ -124,4 +139,11 @@ page {
 }
 .tabs_wrap .ques_wrap {
   margin-top: 60rpx;
+}
+.advice_text {
+  display: flex;
+  height: 80px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
 }

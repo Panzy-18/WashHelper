@@ -16,7 +16,8 @@
 <view class="address_wrap">
     <text class="address_text">江苏省 扬州市</text>
     <!-- url undefine -->
-    <navigator class="address_change" url="../login/login" open-type="navigate">更改→</navigator>
+    <text class="address_change" >更改→</text>
+    <button bindtap="showPopupAddress">1</button>
 </view>
 <!--  -->
 <view class="weather_wrap">
@@ -27,6 +28,7 @@
             不推荐
             <view class="iconfont icontishi icon1"></view>
         </view>
+        <view class="weather_index_info">湿度:90% 紫外线:8</view>
     </view>
     <view class="weather_state">
         <image />
@@ -50,4 +52,12 @@
     </van-tabs>
 </view>
 
-<van-popup show="{{ show }}" bind:close="onClose">内容</van-popup>
+<van-popup show="{{ show }}" bind:close="onClose"  round>
+    <view class="advice_text">
+        当前湿度过高，晾晒时间会较长，容易滋生微生物。
+    </view>
+</van-popup>
+
+<van-popup show="{{ showAddress }}" bind:close="onCloseAddress" position="top" bind:confirm="handleChangeAddress" round>
+    <van-area area-list="{{ areaList }}" title="地区"></van-area>
+</van-popup>

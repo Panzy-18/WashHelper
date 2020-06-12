@@ -5,6 +5,7 @@
     "van-tabs": "../../dist/tabs/index",
     "van-grid": "../../dist/grid/index",
     "van-grid-item": "../../dist/grid-item/index",
-    "van-popup": "../../dist/popup/index"
+    "van-popup": "../../dist/popup/index",
+    "van-area": "../../dist/area/index"
   }
 }
