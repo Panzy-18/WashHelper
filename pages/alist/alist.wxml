@@ -3,18 +3,25 @@
   <view slot="content">问题</view>
 </cu-custom>
 <!--  -->
-<van-panel title="羽绒服怎么洗？" desc="" status="" use-footer-slot>
+<van-panel use-footer-slot>
+  <view slot="header">
+    <view class="header_wrap">绒服该怎么洗?</view>
+  </view>
   <view class="ques_des">
-    <view class="ques_des_text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
-    <van-uploader file-list="{{ fileList }}" max-count="{{fileNum}}" deletable="{{false}}"	/>
+    <view class="ques_des_text">
+      xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    </view>
+    <van-uploader file-list="{{ fileList }}" max-count="{{fileNum}}" deletable="{{false}}" />
   </view>
   <view slot="footer">
-    <van-button size="small" type="info" round>添加回答</van-button>
+    <view class="btn_wrap">
+      <van-button size="small" type="info" round>添加回答</van-button>
+    </view>
   </view>
 </van-panel>
 <!--  -->
 <view class="fvqwvnoqv">
-<view class="card_wrap">
-  <ans-card></ans-card>
-</view>
+  <view class="card_wrap">
+    <ans-card></ans-card>
+  </view>
 </view>

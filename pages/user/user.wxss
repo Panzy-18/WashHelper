@@ -11,10 +11,11 @@
   background: linear-gradient(135deg, #6f8fea 0%, #474ad9 100%);
   border-radius: 0px 0px 0px 128rpx;
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   padding-left: 50rpx;
   padding-right: 50rpx;
+  margin-bottom: 20px;
 }
 .title_wrap .img_wrap {
   display: flex;
@@ -29,6 +30,15 @@
   height: 110rpx;
   width: 86rpx;
   overflow: hidden;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-size: 14px;
+}
+.title_wrap text {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 40rpx;
+  color: white;
 }
 .list_wrap {
   margin-top: 50rpx;

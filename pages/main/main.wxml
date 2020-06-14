@@ -16,7 +16,7 @@
 <view class="address_wrap">
     <text class="address_text">江苏省 扬州市</text>
     <!-- url undefine -->
-    <text class="address_change" >更改→</text>
+    <text class="address_change">更改→</text>
     <button bindtap="showPopupAddress">1</button>
 </view>
 <!--  -->
@@ -43,7 +43,7 @@
             <view class="ques_wrap">
                 <!-- 这里的square属性被修改成了圆形 -->
                 <van-grid square column-num="4" gutter="{{30}}" border="{{false}}">
-                    <van-grid-item icon="../../image/logo.png" text="文字"/>
+                    <van-grid-item icon="../../image/logo.png" text="文字" />
                 </van-grid>
             </view>
         </van-tab>
@@ -51,13 +51,11 @@
         <van-tab title="" disabled></van-tab>
     </van-tabs>
 </view>
-
-<van-popup show="{{ show }}" bind:close="onClose"  round>
-    <view class="advice_text">
-        当前湿度过高，晾晒时间会较长，容易滋生微生物。
-    </view>
+<van-popup show="{{ show }}" bind:close="onClose" round>
+    <view class="advice_text">当前湿度过高，晾晒时间会较长，容易滋生微生物。</view>
 </van-popup>
-
-<van-popup show="{{ showAddress }}" bind:close="onCloseAddress" position="top" bind:confirm="handleChangeAddress" round>
-    <van-area area-list="{{ areaList }}" title="地区"></van-area>
+<van-popup show="{{ showAddress }}" bind:close="onCloseAddress"  bind:confirm="handleChangeAddress" round>
+    <view class="area_wrap">
+        <van-area area-list="{{ areaList }}" title="地区"></van-area>
+    </view>
 </van-popup>

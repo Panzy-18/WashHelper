@@ -1,4 +1,4 @@
-<view class="article_card">
+<navigator open-type="navigate" url="/pages/article/article" class="article_card">
     <view class="up_part">
         <image src="../image/bg.png" mode="center" />
         <view class="article_wrap">
@@ -17,4 +17,4 @@
             <view class="like_num">89人认为有用</view>
         </view>
     </view>
-</view>
+</navigator>

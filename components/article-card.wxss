@@ -24,8 +24,8 @@
 .article_card .up_part image {
   margin-left: 15px;
   overflow: hidden;
-  height: 200rpx;
-  width: 200rpx;
+  height: 160rpx;
+  width: 160rpx;
   border-radius: 10%;
 }
 .article_card .up_part .article_wrap {

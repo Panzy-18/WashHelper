@@ -1,0 +1,25 @@
+<van-cell>
+  <view slot="title">
+    <navigator class="ques_title_wrap">
+        <view class="ques_text">羽绒服应该怎么洗？</view>
+        <view class="desc_text">查看全部回答 ></view>
+    </navigator>
+  </view>
+</van-cell>
+<view class="op">11</view>
+<van-cell>
+    <view slot="title">
+        <view class="auth_wrap">
+            <van-image round height="20px" width="20px" />
+            <view class="van-cell-text">洗乎官方</view>
+        </view>
+    </view>
+</van-cell>
+
+<view class="rt">
+<rich-text >111111</rich-text>
+</view>
+
+<view class="btn_wrap">
+    <van-button type="default" round>下一个回答</van-button>
+</view>

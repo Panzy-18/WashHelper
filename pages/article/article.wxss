@@ -97,3 +97,7 @@ page {
 .comment_text {
   padding: 10px;
 }
+.btm_safe {
+  opacity: 0;
+  height: 34px;
+}

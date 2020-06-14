@@ -1,0 +1,16 @@
+<van-image height="200px" width="100vw" fit="cover" src="http://pic5.bbzhi.com/chuangyibizhi/shuideyunlvbizhi/shuideyunlvbizhi_422150_11.jpg" />
+<van-cell>
+    <view slot="title">
+        <view class="auth_wrap">
+            <van-image round height="20px" width="20px" />
+            <view class="van-cell-text">洗乎官方</view>
+        </view>
+    </view>
+</van-cell>
+<!--  -->
+<van-cell label="33人觉得有帮助" size="large" border="{{ false }}" >
+    <view slot="title">
+        <view class="title_wrap">羽绒洗乎指南，全网最详细教程！</view>
+    </view>
+</van-cell>
+<rich-text>1111111111</rich-text>

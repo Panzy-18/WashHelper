@@ -1,17 +1,19 @@
 <cu-custom bgColor="my_bg" isBack="{{true}}">
     <view slot="backText">返回</view>
-    <view slot="content">洗护</view>
+    <view slot="content">文章</view>
 </cu-custom>
-<!--  -->
-<view class="title">
+<article-page wx:if="{{false}}"/>
+<ans-page />
+<!-- 历史代码 -->
+<!-- <view class="title">
     <view class="title_text">羽绒洗护指南</view>
     <view class="auth">by 洗乎官方</view>
 </view>
-<!--  -->
+
 <view class="video_wrap">
     <video src="" />
 </view>
-<!--  -->
+
 <view class="body_title">注意事项</view>
 <view class="body_wrap">
     <van-sidebar active-key="{{ activeKey }}">
@@ -21,7 +23,7 @@
     </van-sidebar>
     <scroll-view scroll-y="{{true}}" class="body_right">1</scroll-view>
 </view>
-<!--  -->
+
 <view class="btm_product_{{StatusBar!=0?'safe':''}}">
     <van-card num="1" tag="new" price="" currency="" desc="描述信息" title="产品名称" thumb="{{ imageURL }}">
         <view slot="footer">
@@ -29,25 +31,20 @@
         </view>
     </van-card>
 </view>
-<!--  -->
+ -->
 <view class="btm_func_{{StatusBar!=0?'safe':''}}">
     <van-icon bind:click="showPopup" name="comment-circle-o" size="30px" color="#999" />
     <van-icon name="good-job-o" size="30px" color="#999" />
     <van-icon name="star-o" size="30px" color="#999" />
 </view>
-<!--  -->
+
 <van-popup show="{{ show }}" bind:close="onClose" round position="bottom">
     <view class="comment_title">评论</view>
-    <view class="comment_text">
-        <van-skeleton avatar row="3" />
-    </view>
-    <view class="comment_text">
-        <van-skeleton avatar row="3" />
-    </view>
     <view class="comment_text">
         <comment />
     </view>
     <van-field value="{{ cm }}" center clearable placeholder="请输入评论" border="{{ false }}" use-button-slot>
         <van-button slot="button" size="small" type="info" round>发送</van-button>
     </van-field>
+    <view class="btm_safe">1</view>
 </van-popup>

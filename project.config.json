@@ -23,7 +23,7 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
@@ -62,8 +62,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/main/main",
-					"pathName": "pages/main/main",
+					"name": "pages/addq/addq",
+					"pathName": "pages/addq/addq",
 					"query": "",
 					"scene": null
 				}

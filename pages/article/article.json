@@ -1,12 +1,10 @@
 {
   "usingComponents": {
-    "van-sidebar": "../../dist/sidebar/index",
-    "van-sidebar-item": "../../dist/sidebar-item/index",
-    "van-card": "../../dist/card/index",
-    "van-button": "../../dist/button/index",
-    "van-icon": "../../dist/icon/index",
-    "van-popup": "../../dist/popup/index",
-    "van-skeleton": "../../dist/skeleton/index",
-    "van-field": "../../dist/field/index"
+    "article-page":"../../components/article-page",
+    "ans-page":"../../components/ans-page",
+    "van-icon":"../../dist/icon/index",
+    "van-popup":"../../dist/popup/index",
+    "van-field":"../../dist/field/index",
+    "van-button":"../../dist/button/index"
   }
 }

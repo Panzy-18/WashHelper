@@ -1,0 +1,17 @@
+.auth_wrap {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.van-cell-text {
+  padding-left: 10px;
+}
+.title_wrap {
+  font-size: 20px;
+  font-weight: 400;
+}
+rich-text {
+  background: #fff;
+}

@@ -9,46 +9,11 @@
         <image src="../../image/logo.png"></image>
     </view>
     <text>未登录</text>
-    <view class="icon_wrap">
-        <view class="iconfont"></view>
-    </view>
 </view>
-<!--  -->
-<view class="list_wrap">
-    <navigator class="list_item">
-        <view class="left_wrap">
-            <view class="iconfont iconlishi iconstyle1"></view>
-            <view class="list_item_text">我的足迹</view>
-        </view>
-        <view class="iconfont iconyou iconstyle2"></view>
-    </navigator>
-    <navigator class="list_item">
-        <view class="left_wrap">
-            <view class="iconfont icon-shoucang iconstyle1"></view>
-            <view class="list_item_text">我的收藏</view>
-        </view>
-        <view class="iconfont iconyou iconstyle2"></view>
-    </navigator>
-    <navigator class="list_item">
-        <view class="left_wrap">
-            <view class="iconfont icon-tiwen iconstyle1"></view>
-            <view class="list_item_text">我的提问</view>
-        </view>
-        <view class="iconfont iconyou iconstyle2"></view>
-    </navigator>
-    <navigator class="list_item" hidden >
-        <view class="left_wrap">
-            <view class="iconfont iconbox iconstyle1"></view>
-            <view class="list_item_text">物流信息</view>
-        </view>
-        <view class="iconfont iconyou iconstyle2"></view>
-    </navigator>
-    <view class="list_item">
-        <button class="choose_btn" bindtap="handleChooseAddress">选择地址</button>
-        <view class="left_wrap">
-            <view class="iconfont icondizhi iconstyle1"></view>
-            <view class="list_item_text">我的地址</view>
-        </view>
-        <view class="iconfont iconyou iconstyle2"></view>
-    </view>
-</view>
+
+<van-cell-group>
+    <van-cell size="large" title="我的足迹" color="rgb(111, 143, 234)" icon="clock-o" is-link />
+    <van-cell size="large" title="我的收藏" color="rgb(111, 143, 234)" icon="star-o" is-link />
+    <van-cell size="large" title="我的提问" color="rgb(111, 143, 234)" icon="question-o" is-link />
+    <van-cell size="large" title="我的地址" color="rgb(111, 143, 234)" icon="location-o" is-link bind:click="handleChooseAddress" />
+</van-cell-group>

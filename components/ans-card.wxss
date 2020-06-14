@@ -12,6 +12,7 @@
   background-color: #fff;
 }
 .article_card .article_text {
+  padding: 5px;
   font-size: 14px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
@@ -25,12 +26,12 @@
   -webkit-box-orient: vertical;
 }
 .article_card .dn_part {
-  height: 40px;
+  height: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding-left: 5px;
 }
 .article_card .dn_part .auth {
   display: flex;
@@ -47,10 +48,11 @@
   font-size: 14px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
-  color: #9797a8;
+  color: #bdbdc2;
   line-height: 20px;
 }
-.article_card .dn_part .like {
+.data_part {
+  padding: 5px;
   color: #cdcdd1;
   font-size: 14px;
 }

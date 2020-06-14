@@ -1,0 +1,36 @@
+.ques_title_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 5px;
+}
+.ques_title_wrap .ques_text {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.ques_title_wrap .desc_text {
+  color: #bbb;
+  font-size: 14px;
+}
+.auth_wrap {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.van-cell-text {
+  padding-left: 10px;
+}
+.rt {
+  background-color: #fff;
+}
+.op {
+  opacity: 0;
+}
+.btn_wrap {
+  position: fixed;
+  right: 15px;
+  bottom: 150px;
+}
