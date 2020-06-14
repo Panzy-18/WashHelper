@@ -35,8 +35,12 @@
   },
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom",
+    "comment":"/components/comment",
+    "ans-card":"/components/ans-card",
+    "ans-page":"/components/ans-page",
     "article-card":"/components/article-card",
-    "comment":"/components/comment"
+    "article-page":"/components/article-page",
+    "van-icon":"/dist/icon/index"
   },
   "sitemapLocation": "sitemap.json"
 }

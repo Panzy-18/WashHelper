@@ -1,20 +1,20 @@
-<navigator open-type="navigate" url="/pages/article/article" class="article_card">
+<navigator open-type="navigate" url="{{articleUrl}}" class="article_card">
     <view class="up_part">
-        <image src="../image/bg.png" mode="center" />
+        <image src="{{authImg}}" mode="center" />
         <view class="article_wrap">
-            <view class="article_title">{{title_text}}</view>
+            <view class="article_title">{{articleTitle}}</view>
             <view class="article_text">
-                overflow: hidden;display: -webkit-box;text-overflow: ellipsis;-webkit-line-clamp: 2;  /*要显示的行数*/-webkit-box-orient: vertical;
+                {{text}}
             </view>
         </view>
     </view>
     <view class="dn_part">
         <view class="auth">
-            <image src="../image/logo.png" mode="aspectFit"/>
-            <view class="auth_name">官方回答</view>
+            <image src="{{authImg}}" mode="aspectFit"/>
+            <view class="auth_name">{{authName}}</view>
         </view>
         <view class="like">
-            <view class="like_num">89人认为有用</view>
+            <view class="like_num">{{agreeCnt}}人认为有用</view>
         </view>
     </view>
 </navigator>

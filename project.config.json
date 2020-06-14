@@ -62,8 +62,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/addq/addq",
-					"pathName": "pages/addq/addq",
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
 					"query": "",
 					"scene": null
 				}

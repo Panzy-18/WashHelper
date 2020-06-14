@@ -1,7 +1,5 @@
 {
   "usingComponents": {
-    "article-page":"../../components/article-page",
-    "ans-page":"../../components/ans-page",
     "van-icon":"../../dist/icon/index",
     "van-popup":"../../dist/popup/index",
     "van-field":"../../dist/field/index",

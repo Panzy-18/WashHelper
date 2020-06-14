@@ -9,12 +9,12 @@
         <view class="search_input">
             <van-search value="{{ value }}" shape="round" background="rgba(0,0,0,0)" placeholder="请输入搜索关键词" />
         </view>
-        <view class="iconfont icon-tiwen-1"></view>
+        <van-icon name="question-o" bind:click="handleAddQues" />
     </view>
 </view>
 <!--  -->
 <view class="address_wrap">
-    <text class="address_text">江苏省 扬州市</text>
+    <text class="address_text">{{province}} {{city}}</text>
     <!-- url undefine -->
     <text class="address_change">更改→</text>
     <button bindtap="showPopupAddress">1</button>
@@ -31,7 +31,7 @@
         <view class="weather_index_info">湿度:90% 紫外线:8</view>
     </view>
     <view class="weather_state">
-        <image />
+        <image mode="aspectFit" src="/image/weather.png"/>
         <view class="weather_state_description">多云转小雨</view>
         <text class="weather_state_t">26°C</text>
     </view>
@@ -54,8 +54,8 @@
 <van-popup show="{{ show }}" bind:close="onClose" round>
     <view class="advice_text">当前湿度过高，晾晒时间会较长，容易滋生微生物。</view>
 </van-popup>
-<van-popup show="{{ showAddress }}" bind:close="onCloseAddress"  bind:confirm="handleChangeAddress" round>
+<van-popup show="{{ showAddress }}" bind:close="onCloseAddress"   round>
     <view class="area_wrap">
-        <van-area area-list="{{ areaList }}" title="地区"></van-area>
+        <van-area area-list="{{ areaList }}" title="地区" bind:cancel="onCloseAddress" bind:confirm="handleChangeAddress"></van-area>
     </view>
 </van-popup>

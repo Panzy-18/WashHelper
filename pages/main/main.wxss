@@ -101,7 +101,7 @@ page {
   position: absolute;
   width: 180rpx;
   height: 42px;
-  opacity: 0.3;
+  opacity: 0;
 }
 .weather_wrap .weather_index .weather_index_info {
   font-size: 11px;

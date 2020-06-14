@@ -1,14 +1,14 @@
-<view class="article_card">
+<navigator open-type="navigate" url="{{ansUrl}}" class="article_card">
     <view class="dn_part">
         <view class="auth">
-            <image src="../image/logo.png" mode="aspectFit" />
-            <view class="auth_name">官方回答</view>
+            <image src="{{authImg}}" mode="aspectFit" />
+            <view class="auth_name">{{authName}}</view>
         </view>
     </view>
     <view class="article_text">
-        overflow: hidden;display: -webkit-box;text-overflow: ellipsis;-webkit-line-clamp: 2;  /*要显示的行数*/-webkit-box-orient: vertical;
+        {{text}}
     </view>
     <view class="data_part">
-        89赞同 · 4评论 · 2020-04-10
+        {{agreeInfo[0]}}赞同 · {{agreeInfo[1]}}评论 · {{agreeInfo[2]}}
     </view>
-</view>
+</navigator>

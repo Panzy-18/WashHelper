@@ -30,5 +30,9 @@ App({
   globalData: {
     scrollh:0,
     x_btm_height:0
+  },
+
+  getWeatherData: function(adcode){
+    
   }
 });

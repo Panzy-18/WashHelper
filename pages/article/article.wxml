@@ -2,8 +2,8 @@
     <view slot="backText">返回</view>
     <view slot="content">文章</view>
 </cu-custom>
-<article-page wx:if="{{false}}"/>
-<ans-page />
+<article-page wx:if="{{pageClass==='article'}}"/>
+<ans-page wx:if="{{pageClass==='ans'}}}" bindshowNextAns="handleShowNextAns"/>
 <!-- 历史代码 -->
 <!-- <view class="title">
     <view class="title_text">羽绒洗护指南</view>

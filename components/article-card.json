@@ -1,6 +1,5 @@
 {
     "component":true,
     "usingComponent":{
-        "van-divider": "../dist/divider/index"
     }
 }

@@ -6,7 +6,8 @@ Page({
     imageURL: "../../image/logo.png",
     StatusBar:app.globalData.StatusBar,
     show: false,
-    cm:''
+    cm:'',
+    pageClass:"ans"
   },
   showPopup() {
     this.setData({ show: true });
@@ -14,5 +15,9 @@ Page({
 
   onClose() {
     this.setData({ show: false });
+  },
+
+  handleShowNextAns(){
+    console.log(1);
   }
 });

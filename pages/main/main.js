@@ -1,3 +1,4 @@
+const app =  getApp();
 
 Page({
 
@@ -4045,15 +4046,33 @@ Page({
         820101: '澳门半岛',
         820201: '离岛',
       },
-    }
+    },
+    province:"",
+    city:"",
+    adcode:0
   },
 
   onChange(e){
     console.log(e);
     
   },
+  onLoad(){
+    var that = this;
+    wx.getStorage({
+      key: 'userinfo',
+      success(res){
+        console.log(res);
+        let province=res.data.province;
+        let city=res.data.city;
+        that.setData({
+          province, city
+        })
+      }
+    });
+    
+  },
   onShow() {
-		this.getTabBar().init();
+    this.getTabBar().init();
   },
   showPopup(){
     this.setData({ show: true });
@@ -4067,7 +4086,23 @@ Page({
   onCloseAddress() {
     this.setData({ showAddress: false });
   },
+
   handleChangeAddress(e){
-    console.log(e);
+    let province=e.detail.values[1].name;
+    let city=e.detail.values[2].name;
+    let adcode = e.detail.values[2].code;
+    this.setData({
+      province, city, showAddress: false, adcode
+    })
+
+  },
+
+  handleAddQues(){
+    wx.navigateTo({
+      url: '/pages/addq/addq',
+      success: (result)=>{
+        
+      }
+    });
   }
 })

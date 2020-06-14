@@ -9,8 +9,8 @@ Page({
     //console.log(e);
     const {userInfo}=e.detail;
     wx.setStorageSync("userinfo", userInfo);
-    wx.navigateTo({
-      url: '../main/main'
+    wx.switchTab({
+      url: '/pages/main/main'
     });
 
   }
