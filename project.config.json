@@ -28,7 +28,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.1",
-	"appid": "wxb6af36dc9aff2867",
+	"appid": "wx3e23d083029b743b",
 	"projectname": "L2",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -62,8 +62,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/login/login",
-					"pathName": "pages/login/login",
+					"name": "pages/main/main",
+					"pathName": "pages/main/main",
 					"query": "",
 					"scene": null
 				}

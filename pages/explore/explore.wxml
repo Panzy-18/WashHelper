@@ -9,12 +9,12 @@
         <view class="search_input">
             <van-search value="{{ value }}" shape="round" background="rgba(0,0,0,0)" placeholder="请输入搜索关键词" />
         </view>
-        <view class="iconfont icon-tiwen-1"></view>
+        <van-icon name="question-o" bind:click="handleAddQues" size="0px" color="#fff" />
     </view>
 </view>
 <!--  -->
 <scroll-view class="ex_wrap" scroll-y style="height: {{scrollh}}px">
-    <view class="swiper_wrap">
+    <navigator open-type="navigate" url="/pages/article/article?pageClass=article" class="swiper_wrap">
         <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
             <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
                 <view class="swiper-item">
@@ -23,10 +23,11 @@
                 </view>
             </swiper-item>
         </swiper>
-    </view>
+    </navigator>
     <!--  -->
     <view class="article_list">
-        <!-- <article-card /> -->
+        <article-card />
     </view>
     <view class="kongbai">1</view>
 </scroll-view>
+<!--  -->

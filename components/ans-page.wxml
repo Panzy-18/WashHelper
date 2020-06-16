@@ -1,6 +1,6 @@
 <van-cell>
   <view slot="title">
-    <navigator class="ques_title_wrap">
+    <navigator open-type="navigate" url="/pages/alist/alist" class="ques_title_wrap">
         <view class="ques_text">{{quesText}}</view>
         <view class="desc_text">查看全部回答 ></view>
     </navigator>

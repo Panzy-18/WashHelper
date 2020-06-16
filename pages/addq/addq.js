@@ -25,5 +25,11 @@ Page({
         this.setData({ fileList });
       },
     });
+  },
+
+  handleFinidsh(){
+    wx.navigateBack({
+      delta: 1
+    });
   }
 });

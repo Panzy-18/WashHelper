@@ -4047,9 +4047,11 @@ Page({
         820201: '离岛',
       },
     },
-    province:"",
-    city:"",
-    adcode:0
+    location:["待设置",""],
+    adcode:100000,
+    weather_index:["多云转小雨",90,26,"不推荐"],
+    weather_tip:["当前湿度过高，晾晒时间会较长，容易滋生微生物。","当前湿度合适，可以进行晾晒。"],
+    
   },
 
   onChange(e){
@@ -4057,22 +4059,10 @@ Page({
     
   },
   onLoad(){
-    var that = this;
-    wx.getStorage({
-      key: 'userinfo',
-      success(res){
-        console.log(res);
-        let province=res.data.province;
-        let city=res.data.city;
-        that.setData({
-          province, city
-        })
-      }
-    });
-    
+      
   },
   onShow() {
-    this.getTabBar().init();
+    
   },
   showPopup(){
     this.setData({ show: true });
@@ -4091,18 +4081,28 @@ Page({
     let province=e.detail.values[1].name;
     let city=e.detail.values[2].name;
     let adcode = e.detail.values[2].code;
+    var that = this;
+    let key = "d3c97f208375941f084d0f1e34f062f2";
+    let apiurl = "https://restapi.amap.com/v3/weather/weatherInfo?city=" + adcode + "&key=" + key;
+    let weather_index = [];
+    wx.request({
+      url:apiurl,
+      method:'GET',
+      success(res){
+        weather_index = [res.data.lives[0].weather, res.data.lives[0].humidity, res.data.lives[0].temperature, ""];
+        weather_index[3] = (weather_index[1] < 60)? '适宜':'不推荐';
+        that.setData({weather_index});
+      }
+    });
+    // weather_index[3] = (weather_index[1] < 50)? "适宜":"不推荐";
     this.setData({
-      province, city, showAddress: false, adcode
-    })
-
+      location:[province, city], showAddress: false, adcode
+    });
   },
 
   handleAddQues(){
     wx.navigateTo({
-      url: '/pages/addq/addq',
-      success: (result)=>{
-        
-      }
+      url: '/pages/addq/addq'
     });
   }
 })

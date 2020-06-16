@@ -5,7 +5,7 @@
 <!--  -->
 <van-panel use-footer-slot>
   <view slot="header">
-    <view class="header_wrap">绒服该怎么洗?</view>
+    <navigator class="header_wrap">绒服该怎么洗?</navigator>
   </view>
   <view class="ques_des">
     <view class="ques_des_text">

@@ -55,7 +55,15 @@ Page({
       },
     });   
     
-  }
+  },
 
+  handleAddQues(){
+    wx.navigateTo({
+      url: '/pages/addq/addq',
+      success: (result)=>{
+        
+      }
+    });
+  }
 
 })

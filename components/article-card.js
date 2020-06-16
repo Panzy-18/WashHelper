@@ -10,7 +10,7 @@ Component({
       },
       articleUrl:{
         type:String,
-        value:"/pages/article/article"
+        value:"/pages/article/article?pageClass='article'"
       },
       authImg:{
         type:String,

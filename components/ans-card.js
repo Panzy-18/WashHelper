@@ -6,7 +6,7 @@ Component({
   properties: {
     ansUrl:{
       type:String,
-      value:"/pages/article/article"
+      value:"/pages/article/article?pageClass='ans'"
     },
     authImg:{
       type:String,

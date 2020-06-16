@@ -7,7 +7,7 @@ Page({
     StatusBar:app.globalData.StatusBar,
     show: false,
     cm:'',
-    pageClass:"ans"
+    pageClass:'ans'
   },
   showPopup() {
     this.setData({ show: true });
@@ -15,6 +15,12 @@ Page({
 
   onClose() {
     this.setData({ show: false });
+  },
+
+  onLoad(options){
+    this.setData({
+      pageClass:options.pageClass
+    });
   },
 
   handleShowNextAns(){

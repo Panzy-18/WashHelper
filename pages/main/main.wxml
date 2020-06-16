@@ -9,12 +9,12 @@
         <view class="search_input">
             <van-search value="{{ value }}" shape="round" background="rgba(0,0,0,0)" placeholder="请输入搜索关键词" />
         </view>
-        <van-icon name="question-o" bind:click="handleAddQues" />
+        <van-icon name="question-o" bind:click="handleAddQues" size="30px" color="#fff" />
     </view>
 </view>
 <!--  -->
 <view class="address_wrap">
-    <text class="address_text">{{province}} {{city}}</text>
+    <text class="address_text">{{location[0]}} {{location[1]}}</text>
     <!-- url undefine -->
     <text class="address_change">更改→</text>
     <button bindtap="showPopupAddress">1</button>
@@ -25,15 +25,15 @@
         <view class="weather_index_text">洗衣指数</view>
         <view class="weather_index_value">
             <button class="btn" bindtap="showPopup">弹出</button>
-            不推荐
+            {{weather_index[3]}}
             <view class="iconfont icontishi icon1"></view>
         </view>
-        <view class="weather_index_info">湿度:90% 紫外线:8</view>
+        <view class="weather_index_info">湿度:{{weather_index[1]}}% 紫外线:暂无数据</view>
     </view>
     <view class="weather_state">
         <image mode="aspectFit" src="/image/weather.png"/>
-        <view class="weather_state_description">多云转小雨</view>
-        <text class="weather_state_t">26°C</text>
+        <view class="weather_state_description">{{weather_index[0]}}</view>
+        <text class="weather_state_t">{{weather_index[2]}}°C</text>
     </view>
 </view>
 <!--  -->
@@ -43,16 +43,18 @@
             <view class="ques_wrap">
                 <!-- 这里的square属性被修改成了圆形 -->
                 <van-grid square column-num="4" gutter="{{30}}" border="{{false}}">
-                    <van-grid-item icon="../../image/logo.png" text="文字" />
+                    <van-grid-item icon="../../image/logo.png" text="羽绒" link-type="navigateTo" url="/pages/article/article?pageClass=article"/>
                 </van-grid>
             </view>
         </van-tab>
-        <van-tab title="特殊面料">内容 2</van-tab>
+        <van-tab title="特殊面料">
+        </van-tab>
         <van-tab title="" disabled></van-tab>
     </van-tabs>
 </view>
+<!--  -->
 <van-popup show="{{ show }}" bind:close="onClose" round>
-    <view class="advice_text">当前湿度过高，晾晒时间会较长，容易滋生微生物。</view>
+    <view class="advice_text">{{(weather_index[3]==='适宜')? weather_tip[1]:weather_tip[0]}}</view>
 </van-popup>
 <van-popup show="{{ showAddress }}" bind:close="onCloseAddress"   round>
     <view class="area_wrap">

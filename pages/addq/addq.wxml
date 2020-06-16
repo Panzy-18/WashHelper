@@ -11,6 +11,6 @@
     </view>
 </van-cell-group>
 <!--  -->
-<view class="btn_wrap">
+<view class="btn_wrap" bindtap="handleFinish">
     <van-button type="info">完成</van-button>
 </view>
